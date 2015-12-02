@@ -18,4 +18,10 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function aboutAction() {
+    	$v = new ViewModel();
+    	$v->setVariable('author', 'Eu');
+    	return $v;
+    }
 }
